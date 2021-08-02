@@ -5,3 +5,5 @@ David Kogan
 Dennis Jeon
 Sophia Andrews
 Bora Marasli
+Raeyoung Kim
+Emily Beal
