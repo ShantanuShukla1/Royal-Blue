@@ -1,3 +1,4 @@
 # Royal-Blue
-Dennis Jeon
 Shantanu Shukla
+David Kogan
+Dennis Jeon
