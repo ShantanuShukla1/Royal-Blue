@@ -7,80 +7,8 @@
         <script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery.js"></script>
-        <title>"Grids and Tiles"</title>
     </head>
 
-    <body>
-        <script>
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =1
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =2
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =3
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =4
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =5
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =6
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =7
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =8
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =9
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =10
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =11
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =12
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =13
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =14
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =15
-            })
-            $(".btn-choice").on("click", function() {
-                $('#elementToChange').css('background-color', 'blue');
-                var user =16
-            })
-        </script>
-        <link rel="stylesheet" href="style.css">
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <title>"Grids and Tiles"</title>
     <body>
         <div class="grid-container">
             <div class="grid-item">1</div>
@@ -100,5 +28,17 @@
             <div class="grid-item">15</div>  
             <div class="grid-item">16</div>  
           </div>
+        </div>
+        <script>
+            var grid = [];
+            for (let item of document.getElementsByClassName("grid-item")){
+                item.addEventListener("click", selectItem, false);
+                grid.push(item)
+            }
+            function selectItem() {
+                var user = this.textContent
+                console.log(user)
+            }
+        </script>
     </body>
 </html>
