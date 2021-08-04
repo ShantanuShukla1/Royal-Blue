@@ -12,16 +12,22 @@ function selectItem() {
 var choseTiles = new Array();
 for (i=0;i<16; i++) {
     this.style.setProperty("background-color", "blue");
-    computerPick(this);
+    let pick = computerPick(this);
+    var results = "You Won"
+    if (pick.value == this.value) {
+        result = "You Lost"
+    }
+    document.getElementById("result").textcontent = result
 }
 
 function computerPick(userPick) {
-    var userPickIsSameAsPick = true;
+    let userPickIsSameAsPick = true;
     while (userPickIsSameAsPick) {
-        var pick = grid[Math.floor(Math.random() * grid.length)];
+        let pick = grid[Math.floor(Math.random() * grid.length)];
         userPickIsSameAsPick = userPick == pick;
     }
     pick.style.setProperty("background-color", "red");
+    return pick;
 }
 
 for (i=0; i<16; i++) {
