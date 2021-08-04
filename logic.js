@@ -4,3 +4,4 @@ for (let item of document.getElementsByClassName("grid-item")){
 function selectItem(){
     this 
 }
+
