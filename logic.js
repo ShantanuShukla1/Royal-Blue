@@ -15,6 +15,12 @@ function selectItem() {
     for(let pick of pickArray) {
         if(pick.getAttribute("value") == this.getAttribute("value")) {
             userWon = false;
+            alert("Game over, your score is: " + score);
+            score = -1;
+            roundNumber = 1;
+            for(let gridItem of grid) {
+                gridItem.style.setProperty("background-color", "white");
+            }
         }
     }
     score = score + roundNumber;
@@ -41,6 +47,7 @@ function computerPicks(userPick) {
     }
     return picks;
 }
+
 
 // for (i=0; i<16; i++) {
 //     chosenTiles.length++;
