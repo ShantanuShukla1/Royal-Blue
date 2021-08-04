@@ -47,14 +47,3 @@ function computerPicks(userPick) {
     }
     return picks;
 }
-
-
-// for (i=0; i<16; i++) {
-//     chosenTiles.length++;
-//     chosenTiles.push(1 + Math.floor(Math.random()*16));
-//     if(user.value == choseTiles(i)) {
-//         text = "You Lose";
-//     } else {
-//         roundNumber++;
-//     }
-// }
