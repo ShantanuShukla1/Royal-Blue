@@ -2,11 +2,13 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
-        <script src="https://code.jquery.com/jquery.js"></script>
         <title>"Grids and Tiles"</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
     </head>
+
     <body>
     <h1>Grids and Tiles</h1>
     <h2>By: Royal Blue Team</h2>
@@ -28,7 +30,19 @@
             <div class="grid-item">15</div>  
             <div class="grid-item">16</div>  
           </div>
-          <script src="logic.js"> 
+          <script src="logic.js"> </Script>
+        </div>
+        <script>
+            var grid = [];
+            for (let item of document.getElementsByClassName("grid-item")){
+                item.addEventListener("click", selectItem, false);
+                grid.push(item)
+            }
+            function selectItem() {
+                var user = this.textContent;
+                console.log(user);
+                this.style.background = 'blue'
+            }
         </script>
     </body>
 </html>
