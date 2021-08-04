@@ -1,0 +1,18 @@
+
+User picks tile
+(IF rounds = >1, skip to line 10)
+COmputer picks tile
+If tile matches, user loses.  
+If tile doesn't match:
+    user gets a point, and tiles reset. 
+    (Reset means tiles are flipped back over, and values are reshuffled)
+Return to line 1 
+Computer picks tile +1. 
+___________________________________________________________________________________
+Reqs:
+1. Cards are to be shuffled (randomly) on load or restart
+2. Game should differentiate between computer's flipped cards and user's flipped cards.
+3. Game should know how to handle matched and unmatched cards
+4. Game should display the current number of wins, and (if possible) a high score, and (if possible) a timer
+5. 
+
