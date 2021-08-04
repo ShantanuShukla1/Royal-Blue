@@ -4,6 +4,7 @@ for (let item of document.getElementsByClassName("grid-item")){
     grid.push(item)
 }
 function selectItem() {
+<<<<<<< Updated upstream
     var user = this.textContent
     console.log(user)
 }
@@ -19,3 +20,9 @@ for (i=0, i<16, i++) {
         score++;
     }
 }
+=======
+    var user = this.textContent;
+    console.log(user);
+    this.style.background = 'blue'
+}
+>>>>>>> Stashed changes
