@@ -10,12 +10,13 @@ function selectItem() {
 
 var choseTiles = new Array();
 var score = 1;
-for (i=0, i<16, i++) {
+for (i=0; i<16; i++) {
     chosenTiles.length++;
     chosenTiles.push(1 + Math.floor(Math.random()*16));
     if(user.value == choseTiles(i)) {
         text = "You Lose";
-    } else {
+    }
+    else {
         score++;
     }
 }
