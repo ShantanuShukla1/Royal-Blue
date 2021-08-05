@@ -1,7 +1,7 @@
 var grid = [];
 var roundNumber = 1;
 var score = 0;
-var highscore = 0
+var highscore = 0;
 for (let item of document.getElementsByClassName("isometric-card")){
     item.addEventListener("click", selectItem, false);
     grid.push(item);
@@ -20,7 +20,7 @@ function selectItem() {
             if (score > highscore) {
                 highscore = score;
                 console.log(highscore);
-                document.getElementById("high-score").textcontent = highscore
+                document.getElementById("high-score").textContent = highscore;
             };
             score = -1;
             roundNumber = 1;
