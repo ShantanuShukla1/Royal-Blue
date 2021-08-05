@@ -37,6 +37,7 @@ function advanceToNextRound() {
     roundNumber++;
     for(let gridItem of grid) {
         gridItem.style.setProperty("background-color", "white");
+        gridItem.addEventListener("click", selectItem, false);
     }
 }
 function computerPicks(userPick) {
@@ -50,6 +51,9 @@ function computerPicks(userPick) {
     } 
     for(let computerChosen of picks) {
         computerChosen.style.setProperty("background-color", "red");
+    }
+    for (let item of document.getElementsByClassName("isometric-card")){
+        item.removeEventListener("click", selectItem, false);
     }
     return picks;
 }
