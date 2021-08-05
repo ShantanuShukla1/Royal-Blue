@@ -24,6 +24,7 @@ html, body {
 #result-header {
   position: absolute;
   top: 0px;
+  left: 20px;
   text-align: center;
   font-size: xx-large;
 }
@@ -36,12 +37,13 @@ html, body {
 
 }
 #advance {
-  background-color: palegoldenrod;
+  background-color: whitesmoke;
   position: absolute;
   top: 50px;
   left: 20px;
   text-align: end;
   font-size: xx-large;
+  border-radius: 11px;
 }
 .grid-container {
     display: grid;
