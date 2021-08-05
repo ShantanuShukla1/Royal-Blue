@@ -1,7 +1,7 @@
 var grid = [];
 var roundNumber = 1;
 var score = 0;
-for (let item of document.getElementsByClassName("grid-item")){
+for (let item of document.getElementsByClassName("isometric-card")){
     item.addEventListener("click", selectItem, false);
     grid.push(item);
 }
