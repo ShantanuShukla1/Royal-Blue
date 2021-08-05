@@ -26,6 +26,7 @@ function selectItem() {
             roundNumber = 1;
             for(let gridItem of grid) {
                 gridItem.style.setProperty("background-color", "white");
+                gridItem.addEventListener("click", selectItem, false);
             }
         }
     }
@@ -38,6 +39,11 @@ function advanceToNextRound() {
     for(let gridItem of grid) {
         gridItem.style.setProperty("background-color", "white");
         gridItem.addEventListener("click", selectItem, false);
+    }
+    if (score == 120) {
+        alert("Congratulations, you beat the game!");
+        score = 0;
+        roundNumber = 1
     }
 }
 function computerPicks(userPick) {
