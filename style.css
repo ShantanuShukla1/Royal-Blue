@@ -36,6 +36,20 @@ html, body {
   font-size: xx-large;
 
 }
+#high-score-header {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  text-align: center;
+  font-size: xx-large;
+}
+#high-score {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  text-align: end;
+  font-size: xx-large;
+}
 #advance {
   background-color: whitesmoke;
   position: absolute;
