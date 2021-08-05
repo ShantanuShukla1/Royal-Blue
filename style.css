@@ -1,7 +1,54 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+}
+.by {
+  text-align: center;
+}
+.page {
+  background-color: #0093E9;
+  background-image: linear-gradient(360deg, #0093E9 0%, #80D0C7 100%);
+  /* background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%); */
+  /* background-color: lightskyblue; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#result-header {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  text-align: center;
+  font-size: xx-large;
+}
+#result {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  text-align: end;
+  font-size: xx-large;
+
+}
+#advance {
+  background-color: whitesmoke;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  text-align: end;
+  font-size: xx-large;
+  border-radius: 11px;
+}
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #2196F3;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
     padding: 10px;
   }
   .grid-item {
@@ -10,4 +57,24 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
+  }
+
+  .isometric-card {
+    margin: 0 auto;
+    transform: rotateX(51deg) rotateY(-10deg) rotateZ(43deg);
+    transform-style: preserve-3d;
+    background-color: whitesmoke;
+    will-change: transform;
+    width: 210px;
+    height: 280px;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
+  }
+  
+  .isometric-card:hover {
+    transform: translate3d(20px, -16px, 0px) rotateX(45deg) rotateY(-15deg) rotateZ(43deg);
+    box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+      54px 54px 28px -10px rgba(34, 33, 81, 0.15);
   }
