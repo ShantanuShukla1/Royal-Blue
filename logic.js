@@ -127,3 +127,9 @@ function computerPicks(userPick) {
 //     inner.style.msTransform = style;
 //     inner.style.oTransform = style;
 //   }
+
+function resizeResizeableHeight() {
+    $('.resizableHeight').each( function() {
+        $(this).outerHeight( $(this).parent().height() - ( $(this).offset().top - ( $(this).parent().offset().top + parseInt( $(this).parent().css('padding-top') ) ) ) )
+    });
+}
