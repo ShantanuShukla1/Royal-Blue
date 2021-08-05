@@ -17,10 +17,10 @@ function selectItem() {
         if(pick.getAttribute("value") == this.getAttribute("value")) {
             userWon = false;
             alert("Game over, your score is: " + score);
-            if (score > highscore) {
+            if (score >= highscore) {
                 highscore = score;
                 console.log(highscore);
-                document.getElementById("high-score").textContent = highscore;
+                document.getElementById("high-score").textContent = highscore;  
             };
             score = -1;
             roundNumber = 1;
