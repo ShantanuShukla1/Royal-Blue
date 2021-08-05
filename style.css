@@ -4,12 +4,30 @@
 .by {
   text-align: center;
 }
-#result {
+.page {
+  background-color: #2196F3;
+}
+#result-header {
+  position: absolute;
+  top: 0px;
   text-align: center;
+  font-size: xx-large;
+}
+#result {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  text-align: end;
+  font-size: xx-large;
 
 }
 #advance {
-  background-color: royalblue;
+  background-color: palegoldenrod;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  text-align: end;
+  font-size: xx-large;
 }
 .grid-container {
     display: grid;
@@ -27,7 +45,7 @@
 
   .isometric-card {
     margin: 0 auto;
-    transform: rotateX(51deg) rotateZ(43deg);
+    transform: rotateX(51deg) rotateY(-10deg) rotateZ(43deg);
     transform-style: preserve-3d;
     background-color: #fcfcfc;
     will-change: transform;
@@ -40,7 +58,7 @@
   }
   
   .isometric-card:hover {
-    transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
+    transform: translate3d(20px, -16px, 0px) rotateX(45deg) rotateY(-15deg) rotateZ(43deg);
     box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
       54px 54px 28px -10px rgba(34, 33, 81, 0.15);
   }
