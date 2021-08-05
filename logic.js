@@ -19,7 +19,8 @@ function selectItem() {
             alert("Game over, your score is: " + score);
             if (score > highscore) {
                 highscore = score;
-                console.log(highscore)
+                console.log(highscore);
+                document.getElementById("high-score").textcontent = highscore
             };
             score = -1;
             roundNumber = 1;
