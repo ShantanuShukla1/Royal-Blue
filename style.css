@@ -46,7 +46,7 @@ html, body {
 #high-score {
   position: absolute;
   top: 0px;
-  right: -30px;
+  right: -20px;
   text-align: end;
   font-size: xx-large;
 }
