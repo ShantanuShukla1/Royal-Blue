@@ -49,7 +49,7 @@ function advanceToNextRound() {
             grid.push(item);
     }
     // adds a message if you beat the game, though doing so is nearly impossible.
-    if (score == 120) {
+    if (score == 190) {
         alert("Congratulations, you beat the game!");
         score = 0;
         roundNumber = 0;
