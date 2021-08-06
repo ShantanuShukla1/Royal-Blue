@@ -13,6 +13,7 @@ html, body {
 .by {
   text-align: center;
 }
+/* This creates the gradient background */
 .page {
   background-color: #0093E9;
   background-image: linear-gradient(360deg, #0093E9 0%, #80D0C7 100%);
@@ -24,6 +25,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+/* This adds the word "Score" before the score value */
 #result-header {
   position: absolute;
   top: 0px;
@@ -31,6 +33,7 @@ html, body {
   text-align: center;
   font-size: xx-large;
 }
+/* This is the score value positioning code */
 #result {
   position: absolute;
   top: 0px;
@@ -39,6 +42,7 @@ html, body {
   font-size: xx-large;
 
 }
+/* This adds the word "High Score" before the high score value */
 #high-score-header {
   position: absolute;
   top: 0px;
@@ -46,6 +50,7 @@ html, body {
   text-align: right;
   font-size: xx-large;
 }
+/* This is the high score value positioning code */
 #high-score {
   position: absolute;
   top: 0px;
@@ -53,6 +58,7 @@ html, body {
   text-align: end;
   font-size: xx-large;
 }
+/* This styles the button for Start/Next Round */
 #advance {
   background-color: whitesmoke;
   position: absolute;
@@ -62,6 +68,7 @@ html, body {
   font-size: xx-large;
   border-radius: 11px;
 }
+/* Holds Isometric Cards */
 .grid-container {
     display: grid;
     /* grid-template-columns: auto auto auto auto auto; */
@@ -104,14 +111,14 @@ html, body {
     clear: both;
     display: table;
   }
-  .grid-item {
+  /* .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
-  }
-
+  } */
+/* Adds beautiful isometric cards in place of grid items. Styles them. Adds shadow for depth. */
   .isometric-card {
     margin: 0 auto;
     transform: rotateX(51deg) rotateY(-10deg) rotateZ(43deg);
@@ -125,12 +132,13 @@ html, body {
       28px 28px 28px 0 rgba(34, 33, 81, 0.25);
     transition: 0.4s ease-in-out transform, 0.3s ease-in-out box-shadow;
   }
-  
+  /* Adds isometric card hover response and animation, so that when hovering over a card, the card will animate. */
   .isometric-card:hover {
     transform: translate3d(20px, -16px, 0px) rotateX(45deg) rotateY(-15deg) rotateZ(43deg);
     box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01),
       54px 54px 28px -10px rgba(34, 33, 81, 0.15);
   }
+  /* Prevents overflow on different screens */
   body, html {
     overflow-x:hidden;
     resize: horizontal;

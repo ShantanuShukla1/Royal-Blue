@@ -1,9 +1,13 @@
+// Variables used throughout the code
 var grid = [];
 var roundNumber = 0;
 var score = 0;
 var highscore = 0;
+// Adds constant used in listener for the Start --> Next Round Button text change
 const btn = document.getElementById("advance");
+// Listens for "Start/Next Round" button click event
 document.getElementById("advance").addEventListener("click", advanceToNextRound, false);
+// This function changes card color on clicking an item, and then tells the computer to pick another random card. If it matches, user loses. If it doesn't, user wins this round
 function selectItem() {
     var user = this.textContent;
     console.log(user);
@@ -28,10 +32,11 @@ function selectItem() {
             }
         }
     }
+    // changes the score number
     score = score + roundNumber;
     document.getElementById("result").textContent = score;
 }   
-
+// Adds function for Next Round Button. Button enables user to press cards on click between rounds and at start.
 function advanceToNextRound() {
     roundNumber++
     for(let gridItem of grid) {
@@ -43,12 +48,14 @@ function advanceToNextRound() {
             item.addEventListener("click", selectItem, false);
             grid.push(item);
     }
+    // adds a message if you beat the game, though doing so is nearly impossible.
     if (score == 120) {
         alert("Congratulations, you beat the game!");
         score = 0;
         roundNumber = 0;
     }
 }
+//Function tells computer to pick another random card and style it.
 function computerPicks(userPick) {
     let picks = [];
     var possibleChoices = [...grid];
@@ -66,7 +73,7 @@ function computerPicks(userPick) {
     }
     return picks;
 }
-
+//Changes button text from start to next round after first click.
 btn.addEventListener("click", ()=>{
 
     if(btn.innerText === "Start"){
